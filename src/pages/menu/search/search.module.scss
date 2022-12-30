@@ -1,0 +1,27 @@
+@import "styles/_variable.scss";
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+    padding: 0 .5rem;
+    background-color: $background;
+    border-radius: .8rem;
+
+    &__input-search {
+        background-color: $background;
+        padding: .5rem;
+        outline: none;
+        
+        color: $black;
+        font-weight: 700;
+        font-size: 1rem;
+        
+        &::placeholder {
+            color: $grey;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+    }
+}
