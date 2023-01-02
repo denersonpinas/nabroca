@@ -109,11 +109,19 @@
 
 
 .section-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     padding: 1rem $padding-horizont;
     
     &__title {
         color: $black;
         font-size: 5rem;
         width: 40%;
+    }
+
+    &__order {
+        display: flex;
+        justify-content: space-between;
     }
 }
