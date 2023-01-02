@@ -8,6 +8,7 @@ export function Itens() {
             {Iten.map((item) => (
                 <Item
                     key={item.id}
+                    {...item}
                 />
             ))}
         </div>
