@@ -43,7 +43,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         padding: 1rem;
-        background-color: $background;
+        background-color: $white;
         border-radius: .5rem;
 
         &__nav {
@@ -109,11 +109,19 @@
 
 
 .section-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     padding: 1rem $padding-horizont;
     
     &__title {
         color: $black;
         font-size: 5rem;
         width: 40%;
+    }
+
+    &__order {
+        display: flex;
+        justify-content: space-between;
     }
 }

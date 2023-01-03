@@ -1,0 +1,86 @@
+@import "styles/_variable";
+$pastas: #d73b3b;
+$meat: #30201e;
+$combos: #e6c864;
+$vegans: #80aa40;
+
+.item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+
+    &__image {
+        width: 100%;
+        
+        img {
+            width: 100%;
+            border-radius: 1rem;
+        }
+    }
+
+    &__type {
+        position: absolute;
+        margin-top: 13rem;
+        margin-left: -18rem;
+        padding: .5rem 1rem;
+        background-color: $primary-color;
+        border-radius: .25rem;
+        
+        font-weight: 600;
+        color: #fff;
+        font-size: 1rem;
+
+        &__pastas {
+            background-color: $pastas;
+        }
+
+        &__meat {
+            background-color: $meat;
+        }
+
+        &__vegans {
+            background-color: $vegans;
+        }
+
+        &__combos {
+            background-color: $combos;
+        }
+    }
+
+    &__descriptions {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;    
+        
+    }
+    
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2rem;
+    }
+    
+    &__text {
+        line-height: 1.5rem;   
+    }
+
+    &__complements {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__portion, &__weight{
+        font-weight: 600;
+    }
+
+    &__price {        
+        font-weight: 700;
+        color: $primary-color;
+        font-size: 1.5rem;
+    }
+
+}
