@@ -23,16 +23,20 @@ export function Itens( {filter, order, search} : Props) {
         return true
     }
 
+    function sortPropertyAscending(newList: typeof Iten, option: "size" | "serving" | "price") {
+        return newList.sort((a, b) => a[option] > b[option] ? 1 : -1)
+    }
+
     function ordering(newList: typeof Iten) {
         switch(order) {
             case 'portion':
-                return newList.sort((a, b) => a.size > b.size ? 1 : -1);
+                return sortPropertyAscending(newList, "size");
             
             case 'num_people':
-                return newList.sort((a, b) => a.serving > b.serving ? 1 : -1);
+                return sortPropertyAscending(newList, "serving");
             
             case 'price':
-                return newList.sort((a, b) => a.price > b.price ? 1 : -1);
+                return sortPropertyAscending(newList, "price");
             
             default:
                 return newList;
