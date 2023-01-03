@@ -1,18 +1,22 @@
 [
     {
       "label": "Pastas",
+      "photo": "/assets/filter/spaguetti.png",
       "id": 1
     },
     {
       "label": "Meat",
+      "photo": "/assets/filter/meat.png",
       "id": 2
     },
     {
       "label": "Combos",
+      "photo": "/assets/filter/combo.png",
       "id": 3
     },
     {
       "label": "Vegans",
+      "photo": "/assets/filter/salad.png",
       "id": 4
     }
   ]
