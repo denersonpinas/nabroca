@@ -13,8 +13,12 @@
         @media (min-width: 1200px) {
             flex-direction: row;
             justify-content: space-between;
-            padding: 20px $padding-horizont;
+            padding: 20px $padding-horizont-sm;
             
+        }
+
+        @media (min-width: 1400px) {
+            padding: 20px $padding-horizont;   
         }
 
         &__logo {
@@ -44,6 +48,11 @@
         height: 18.75rem;
         flex-direction: row;
         gap: 2rem;
+        padding: 1rem $padding-horizont-sm;
+        
+    }
+
+    @media (min-width: 1400px) {
         padding: 1rem $padding-horizont;
         
     }
@@ -87,6 +96,10 @@
     padding: 1rem;
 
     @media (min-width: 1200px) {
+        padding: 1rem $padding-horizont-sm;
+    }
+
+    @media (min-width: 1400px) {
         padding: 1rem $padding-horizont;
     }
     
@@ -103,9 +116,12 @@
         gap: .5rem;
         align-items: flex-start;
         justify-content: center;
+        z-index: 1000;
 
         @media (min-width: 1200px) {
+            flex-direction: row;
             justify-content: space-between;
+            align-items: center;
         }
     }
 }
