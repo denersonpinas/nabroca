@@ -1,0 +1,30 @@
+[
+    {
+      "label": "Pastas",
+      "photo": "/assets/filter/pastas.png",
+      "icon": "/assets/filter/spaguetti.png",
+      "description": "Food is any substance consumed to provide nutritional support for an organism.",
+      "id": 1
+    },
+    {
+      "label": "Meat",
+      "photo": "/assets/filter/meatI.png",
+      "icon": "/assets/filter/meat.png",
+      "description": "Food is any substance consumed to provide nutritional support for an organism.",
+      "id": 2
+    },
+    {
+      "label": "Combos",
+      "photo": "/assets/filter/comboI.png",
+      "icon": "/assets/filter/combo.png",
+      "description": "Food is any substance consumed to provide nutritional support for an organism.",
+      "id": 3
+    },
+    {
+      "label": "Vegans",
+      "photo": "/assets/filter/vegan.png",
+      "icon": "/assets/filter/salad.png",
+      "description": "Food is any substance consumed to provide nutritional support for an organism.",
+      "id": 4
+    }
+  ]

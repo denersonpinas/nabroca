@@ -10,6 +10,7 @@
   vertical-align: baseline;
   box-sizing: border-box;
   font-family: 'Italiana', serif;
+  text-decoration: none
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -53,4 +54,11 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+#root > main.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }

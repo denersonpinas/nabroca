@@ -1,0 +1,14 @@
+@import 'styles/variable';
+
+.footer {
+    height: 6.25rem;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $red;
+
+    &__logo {
+        height: 6.25rem;
+    }
+}

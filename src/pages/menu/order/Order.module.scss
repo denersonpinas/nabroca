@@ -24,7 +24,7 @@
     }
 
     &__text--active {
-        background-color: $primary-color;
+        background-color: $red;
         color: #fff;
     }
     
@@ -50,7 +50,7 @@
             text-align: left;
 
             &:hover {
-                background-color: $primary-color;
+                background-color: $red;
                 color: #fff;
             }
         }

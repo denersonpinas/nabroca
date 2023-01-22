@@ -1,5 +1,5 @@
-import style from "./filter.module.scss";
-import filters from "./filter.json";
+import style from './filter.module.scss';
+import filters from 'data/category.json';
 import classNames from 'classnames';
 
 type IOpcao = typeof filters[0]
@@ -11,25 +11,25 @@ interface Props {
 
 export function Filter({ filter, setFilter }: Props) {
 
-    function selectFilter(opcao: IOpcao) {
-        if(filter == opcao.id) return setFilter(null);
-        return setFilter(opcao.id)
-    }
+	function selectFilter(opcao: IOpcao) {
+		if(filter == opcao.id) return setFilter(null);
+		return setFilter(opcao.id);
+	}
 
-    return(
-        <div className={style["section-filters"]}>
-            {filters.map((option) =>
-                    <button 
-                        key={option.id} 
-                        className={classNames({
-                            [style["section-filters__filter"]]: true,
-                            [style["section-filters__filter--active"]]: filter === option.id
-                        })}
-                        onClick={() => selectFilter(option)}>
-                        <img src={option.photo} alt="text" className={style["section-filters__filter__img"]}/>
-                        {option.label}
-                    </button>
-            )}
-        </div>
-    );
+	return(
+		<div className={style['section-filters']}>
+			{filters.map((option) =>
+				<button 
+					key={option.id} 
+					className={classNames({
+						[style['section-filters__filter']]: true,
+						[style['section-filters__filter--active']]: filter === option.id
+					})}
+					onClick={() => selectFilter(option)}>
+					<img src={option.icon} alt="text" className={style['section-filters__filter__img']}/>
+					{option.label}
+				</button>
+			)}
+		</div>
+	);
 }
